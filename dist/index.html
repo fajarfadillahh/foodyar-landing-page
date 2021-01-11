@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodyar Landing Page</title>
+
+    <!-- CSS TAILWIND -->
+    <link rel="stylesheet" href="./css/tailwind.css" />
+
+    <!-- FONT GOGGLE -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container font-quicksand">
+      <!-- NAVBAR SECTION -->
+      <nav
+        class="nav container flex justify-between items-center h-20 fixed w-full"
+      >
+        <a href="#" class="nav__logo w-32">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+
+        <div class="nav__menu flex items-center font-medium" id="nav-menu">
+          <ul class="nav__list flex text-gray-400">
+            <li class="nav__item ml-6">
+              <a href="#" class="nav__link visited:text-gray-700">Home</a>
+            </li>
+            <li class="nav__item ml-6">
+              <a href="#" class="nav__link hover:text-gray-700">Beverages</a>
+            </li>
+            <li class="nav__item ml-6">
+              <a href="#" class="nav__link hover:text-gray-700">Chef</a>
+            </li>
+            <li class="nav__item ml-6">
+              <a href="#" class="nav__link hover:text-gray-700">Ingredient</a>
+            </li>
+            <li class="nav__item ml-6">
+              <a href="#" class="nav__link hover:text-gray-700">Stories</a>
+            </li>
+          </ul>
+
+          <a
+            href="#"
+            class="nav__btn ml-10 py-2 px-8 rounded-b-xl rounded-t-3xl bg-red-100 focus:bg-red-200"
+            >My Kitchen</a
+          >
+        </div>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <section
+        class="hero h-screen grid grid-cols-2 gap-8 content-center place-self-center"
+      >
+        <div class="hero__data self-center ml-12">
+          <h1
+            class="hero__title text-5xl font-bold leading-snug capitalize text-gray-900"
+          >
+            eat what you cook<br />with us, together!
+          </h1>
+          <p
+            class="hero__description text-xl text-gray-500 mt-6 mb-10 leading-relaxed font-medium"
+          >
+            When you eat something that cooked by<br />yourself, the happiness
+            is priceless.
+          </p>
+          <a
+            href="#"
+            class="hero__btn py-3 px-10 rounded-b-xl rounded-t-3xl bg-yellow-400 font-semibold"
+            >Decide a Menu</a
+          >
+        </div>
+
+        <div class="hero__img relative">
+          <img src="./img/hero image.png" class="w-11/12" alt="Hero Image" />
+
+          <a
+            href="#"
+            class="hero__img-play absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <img
+              src="./img/play icon.svg"
+              class="bg-red-100 p-5 rounded-full shadow-xl"
+              alt="Play Icon"
+            />
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- GSAP -->
+    <script src="./js/gsap.min.js"></script>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
